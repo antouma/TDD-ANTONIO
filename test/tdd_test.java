@@ -59,7 +59,11 @@ public class tdd_test {
 		c.puto("Nombre", "Antonio");
 		assertEquals(false, c.containsKey("Apellido"));
 	}
-	
+	@Test
+	public void remove_true(){
+		c.puto("Nombre", "Antonio");
+		assertEquals(true, c.remove("Nombre"));
+	}
 	
 	
 }
