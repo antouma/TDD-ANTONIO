@@ -64,6 +64,11 @@ public class tdd_test {
 		c.puto("Nombre", "Antonio");
 		assertEquals(true, c.remove("Nombre"));
 	}
+	@Test
+	public void remove_devueltoFalse(){
+		c.puto("Nombre", "Antonio");
+		assertEquals(false, c.remove("Apellido"));
+	}
 	
 	
 }
