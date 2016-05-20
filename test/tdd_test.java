@@ -54,6 +54,11 @@ public class tdd_test {
 		c.puto("Nombre", "Antonio");
 		assertEquals(true, c.containsKey("Nombre"));
 	}
+	@Test
+	public void containKey_devueltoFalse(){
+		c.puto("Nombre", "Antonio");
+		assertEquals(false, c.containsKey("Apellido"));
+	}
 	
 	
 	
