@@ -37,4 +37,12 @@ public class tdd_test {
 		c.geto("Apellido");
 	
 	}
+	
+	@Test
+	public void get_orElsePrimeraOPcion(){
+		c.puto("Nombre", "Antonio");
+		assertEquals("Antonio", c.getOrelse("Nombre", "0"));
+	}
+	
+	
 }
