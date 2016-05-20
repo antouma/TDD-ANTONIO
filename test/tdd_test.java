@@ -1,7 +1,9 @@
 import static org.junit.Assert.*;
 
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 
 public class tdd_test {
@@ -29,8 +31,10 @@ public class tdd_test {
 		c.puto("Nombre", "Antonio");
 		assertEquals("Antonio" , c.geto("Nombre"));
 	}
+	@Test(expected = NegativeKey.class)
+	public void addClaveDevuelveExcepcion(){
+		c.puto("Nombre", "Juan");
+		c.geto("Apellido");
 	
-	
-	
-	
+	}
 }
