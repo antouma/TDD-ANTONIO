@@ -24,5 +24,13 @@ public class tdd_test {
 		c.puto("Nombre","Felipe");
 		assertEquals("Felipe" , c.geto("Nombre"));
 	}
+	@Test
+	public void get_normal(){
+		c.puto("Nombre", "Antonio");
+		assertEquals("Antonio" , c.geto("Nombre"));
+	}
+	
+	
+	
 	
 }
